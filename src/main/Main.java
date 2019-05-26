@@ -9,7 +9,7 @@ import java.util.*;
  * @create 2018/8/24
  * @since 1.0.0
  */
-public class Main {
+public class Main extends Thread{
     public static void main(String[] args) {
         List<String> list = new ArrayList<String>();
         list.add("徐");
@@ -67,5 +67,10 @@ public class Main {
         //倒叙排(从大到小)
         Collections.reverse(list);
         System.out.println(list.toString());
+    }
+
+    @Override
+    public void run() {
+        super.run();
     }
 }

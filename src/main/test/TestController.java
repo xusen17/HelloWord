@@ -1,10 +1,11 @@
 package main.test;
 
 import main.test.entity.Student;
-import main.test.entity.User;
 
-import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * 〈测试〉
@@ -14,7 +15,6 @@ import java.util.*;
  * @since 1.0.0
  */
 public class TestController {
-    private static int a ;
         public static void main(String[] args) {
             /**
              * 1.在需要排序的bean内实现Comparable接口，根据排序需求重写compareTo方法
